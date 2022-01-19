@@ -1,7 +1,7 @@
 <div class="app-container">
   <div class="app-header">
     <div class="app-header-logo">
-      Shu-Wei Liu
+      {{author}}
     </div>
     <div class="app-header-navigation">
       <ul class="nav-list">
@@ -12,7 +12,8 @@
     </div>
   </div>
   <div class="app-content">
-    <div class="about-me">
+    <!-- About me -->
+    <div class="about-me wrapper">
       <div class="title">ABOUT ME</div>
       <div class="content">
         <div class="content-left">
@@ -43,5 +44,122 @@
         </div>
       </div>
     </div>
+    <!-- Skills -->
+    <div class="skills wrapper">
+      <div class="title">Skills</div>
+      <div class="content">
+        <!-- Programming -->
+        <div class="row">
+          <div class="skills-title">Programming</div>
+          <div class="skills-items">
+            <div class="skills-items-item">
+              <img src="assets/icons/c-sharp.png">
+              <span>C#</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/python.png">
+              <span>Python</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/golang.png">
+              <span>Golang</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/javascript.png">
+              <span>JavaScript</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/angularjs.png">
+              <span>Angularjs</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/html5.png">
+              <span>html</span>
+            </div>
+          </div>
+        </div>
+        <!-- CI/CD -->
+        <div class="row">
+          <div class="skills-title">CI/CD</div>
+          <div class="skills-items">
+            <div class="skills-items-item">
+              <img src="assets/icons/jenkins.png">
+              <span>Jenkins</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/github.png">
+              <span>GitHub Actions</span>
+            </div>
+          </div>
+        </div>
+        <!-- Version Control -->
+        <div class="row">
+          <div class="skills-title">Version Control</div>
+          <div class="skills-items">
+            <div class="skills-items-item">
+              <img src="assets/icons/subversion.png">
+              <span>Subversion</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/github.png">
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+        <!-- Cloud Service -->
+        <div class="row">
+          <div class="skills-title">Cloud Service</div>
+          <div class="skills-items">
+            <div class="skills-items-item">
+              <img src="assets/icons/amazon-web-services.png">
+              <span>Amazon Web Service</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/google-cloud-platform.png">
+              <span>Google Cloud Platform</span>
+            </div>
+          </div>
+        </div>
+        <!-- Database -->
+        <div class="row">
+          <div class="skills-title">Database</div>
+          <div class="skills-items">
+            <div class="skills-items-item">
+              <img src="assets/icons/microsoft-sql-server.png">
+              <span>SQL Server</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/mysql.png">
+              <span>MySQL</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/oracle.png">
+              <span>ORACLE</span>
+            </div>
+            <div class="skills-items-item">
+              <img src="assets/icons/mongodb.png">
+              <span>MongoDB</span>
+            </div>
+          </div>
+        </div>
+        <!-- Others -->
+      </div>
+    </div>
+    <!-- Work Experience -->
+    <!-- Education -->
+    <!-- Certificate -->
   </div>
 </div>
+
+<div class="contact-box">
+  <a href="mailto:{{mail}}">
+    <icon-mail class="s26"></icon-mail>
+  </a>
+  <a href="{{linkedin}}" target="_blank">
+    <icon-linkedin class="s26"></icon-linkedin>
+  </a>
+</div>
+
+<footer>
+  <div>© 2022 {{author}}. All Right Reserved.</div>
+</footer>
