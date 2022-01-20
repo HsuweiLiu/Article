@@ -242,6 +242,70 @@
         }
       }
     }
+
+    .education {
+      .content {
+        .education-school {
+          display       : flex;
+          flex-direction: column;
+          align-items   : center;
+
+          img.school-logo {
+            width: 80px;
+          }
+
+          .font {
+            &-school {
+              margin-top : 1rem;
+              font-size  : 1.4rem;
+              font-weight: 600;
+            }
+
+            &-school-degree {
+              color      : var(--c-blue-900);
+              font-size  : 1.4rem;
+              font-weight: 400;
+            }
+
+            &-time {
+              color: var(--app-text-secondary);
+            }
+          }
+        }
+      }
+    }
+
+    .certificates {
+
+      .content {
+
+        .certificate {
+
+          margin-top    : 2rem;
+          display       : flex;
+          flex-direction: column;
+          align-items   : center;
+          gap           : 1rem;
+
+          img {
+            width: 100%;
+          }
+
+          &-title {
+            font-weight: 600;
+            font-size  : 1.5rem;
+          }
+
+          &-subtitle {
+            color: var(--app-text-secondary);
+          }
+        }
+
+        .certificate+.certificate {
+          margin-top    : 3rem;
+        }
+      }
+    }
   }
 }
 
