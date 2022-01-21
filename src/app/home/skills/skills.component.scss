@@ -1,0 +1,53 @@
+:host {
+  display: block;
+}
+
+.skills {
+  display       : flex;
+  flex-direction: column;
+
+  .title {
+    font-size  : 28px;
+    font-weight: 600;
+  }
+
+  .content {
+    display  : flex;
+    flex-wrap: wrap;
+    flex     : 1 1 50%;
+    gap      : 1.8rem;
+
+
+    .row {
+      margin-top: 1.6rem;
+
+      .skills-title {
+        font-size: 0.9rem;
+        margin   : 0px 0px 0.6rem;
+        color    : var(--app-text-secondary);
+      }
+
+      .skills-items {
+        display       : flex;
+        flex-direction: row;
+        flex-wrap     : wrap;
+        gap           : 2em;
+
+        &-item {
+          display       : flex;
+          flex-direction: row;
+          align-items   : center;
+          gap           : 0.8rem;
+          padding       : 6px 14px;
+          border-radius : 12px;
+          border        : 1px solid var(--c-primary);
+
+          img {
+            height: 40px;
+          }
+        }
+      }
+    }
+
+  }
+}
