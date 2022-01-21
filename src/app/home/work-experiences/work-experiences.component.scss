@@ -1,0 +1,93 @@
+:host {
+  display: block;
+}
+
+.work-experiences {
+
+  .title {
+    font-size  : 28px;
+    font-weight: 600;
+  }
+
+  .content {
+
+    .work-experience {
+      background   : var(--c-grey-100);
+      border-radius: 8px;
+      box-shadow   : 5px 5px 15px var(--c-grey-300);
+      margin-top   : 36px;
+      padding      : 2rem;
+
+      // 手機版
+      @media screen and (max-width:576px) {
+        padding: 1.5rem 0.5rem;
+      }
+
+      &-company {
+        display  : flex;
+        flex-wrap: wrap;
+        flex     : 1 1 20%;
+        gap      : 2rem;
+
+        .work-skills {
+          display  : flex;
+          flex-wrap: wrap;
+
+          &>ul {
+            flex-grow: 1;
+          }
+        }
+
+        img.company-logo {
+          height: 49px;
+        }
+
+        .font {
+          &-job-title {
+            font-size  : 1.6rem;
+            font-weight: 400;
+            line-height: 40px;
+          }
+
+          &-company {
+            color      : var(--c-blue-900);
+            font-size  : 1.4rem;
+            font-weight: 400;
+            line-height: 40px;
+          }
+
+          &-time,
+          &-area {
+            color      : var(--app-text-secondary);
+            font-size  : 0.8rem;
+            line-height: 28px;
+          }
+        }
+      }
+
+      &-job {
+        margin-top: 2rem;
+        color     : var(--app-text-secondary);
+
+        p {
+          line-height: 1.5;
+        }
+
+        strong {
+          font-size     : 18px;
+          line-height   : 1.8;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+}
+
+img.swm-design {
+  width: 300px;
+
+  // 手機版
+  @media screen and (max-width:576px) {
+    width: 100%;
+  }
+}

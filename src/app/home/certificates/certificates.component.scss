@@ -1,0 +1,47 @@
+:host {
+  display: block;
+}
+
+.certificates {
+
+  .title {
+    font-size  : 28px;
+    font-weight: 600;
+  }
+
+  .content {
+
+    padding: 2rem 5rem;
+
+    // 手機版
+    @media screen and (max-width:576px) {
+      padding: 1.5rem 0.5rem;
+    }
+
+    .certificate {
+
+      margin-top    : 2rem;
+      display       : flex;
+      flex-direction: column;
+      align-items   : center;
+      gap           : 1rem;
+
+      img {
+        width: 100%;
+      }
+
+      &-title {
+        font-weight: 600;
+        font-size  : 1.5rem;
+      }
+
+      &-subtitle {
+        color: var(--app-text-secondary);
+      }
+    }
+
+    .certificate+.certificate {
+      margin-top: 3rem;
+    }
+  }
+}

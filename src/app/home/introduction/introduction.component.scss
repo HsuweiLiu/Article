@@ -1,0 +1,55 @@
+:host {
+  display: block;
+}
+
+.content {
+  display       : flex;
+  flex-direction: row;
+  flex-wrap     : wrap;
+  padding       : 1rem;
+
+  @media screen and (max-width: 768px) {
+    padding       : 1.5rem 0;
+    flex-direction: column;
+    align-items   : center;
+  }
+
+  &-left {
+    display    : flex;
+    align-items: center;
+
+    img {
+      width        : 130px;
+      height       : 130px;
+      border-radius: 50%;
+    }
+  }
+
+  &-right {
+    max-width: 80%;
+    padding  : 0 30px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+
+    .info {
+      &-1 {
+        margin     : 8px 0;
+        font-weight: 600;
+      }
+
+      // &-2 {}
+
+      &-3 {
+        margin-top : 12px;
+        display    : flex;
+        align-items: center;
+
+        span {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}

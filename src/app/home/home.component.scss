@@ -51,11 +51,6 @@
       padding: 3rem;
     }
 
-    .title {
-      font-size  : 28px;
-      font-weight: 600;
-    }
-
     .wrapper:not(:first-child)::before {
       content   : "";
       display   : inline-block;
@@ -63,110 +58,6 @@
       height    : 1px;
       margin    : 6rem 0px;
       background: var(--c-dark);
-    }
-
-    .about-me {
-      display       : flex;
-      flex-direction: column;
-
-      .content {
-        display       : flex;
-        flex-direction: row;
-        flex-wrap     : wrap;
-        padding       : 1rem;
-
-        @media screen and (max-width:576px) {
-          padding       : 1.5rem 0;
-          flex-direction: column;
-          align-items   : center;
-        }
-
-        &-left {
-          display    : flex;
-          align-items: center;
-
-          img {
-            width        : 130px;
-            height       : 130px;
-            border-radius: 50%;
-          }
-        }
-
-        &-right {
-          max-width: 80%;
-          padding  : 0 30px;
-
-          @media screen and (max-width:576px) {
-            padding: 0;
-          }
-
-          .info {
-            &-1 {
-              margin     : 8px 0;
-              font-weight: 600;
-            }
-
-            &-2 {
-              font-style: italic;
-            }
-
-            &-3 {
-              margin-top : 12px;
-              display    : flex;
-              align-items: center;
-
-              span {
-                padding-left: 10px;
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .skills {
-      display       : flex;
-      flex-direction: column;
-
-      .content {
-        display  : flex;
-        flex-wrap: wrap;
-        flex     : 1 1 50%;
-        gap      : 1.8rem;
-
-
-        .row {
-          margin-top: 1.6rem;
-
-          .skills-title {
-            font-size: 0.9rem;
-            margin   : 0px 0px 0.6rem;
-            color    : var(--app-text-secondary);
-          }
-
-          .skills-items {
-            display       : flex;
-            flex-direction: row;
-            flex-wrap     : wrap;
-            gap           : 2em;
-
-            &-item {
-              display       : flex;
-              flex-direction: row;
-              align-items   : center;
-              gap           : 0.8rem;
-              padding       : 6px 14px;
-              border-radius : 12px;
-              border        : 1px solid var(--c-primary);
-
-              img {
-                height: 40px;
-              }
-            }
-          }
-        }
-
-      }
     }
   }
 }
